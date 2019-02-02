@@ -1,3 +1,12 @@
+# Not maintained
+
+This tool was very useful when I was using Rancher 1.x - but I have since moved to Rancher 2 with Kubernetes and I no longer use this.
+
+Feel free to use this tool, fork the project and improve it.
+
+If someone would like to take ownership of it, please let me know (open an issue). A few people forked the project and improved upon it already.
+
+
 Gaucho
 ===========================================
 
