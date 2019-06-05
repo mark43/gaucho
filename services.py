@@ -175,10 +175,7 @@ def upgrade(service_id, start_first=True, complete_previous=False, imageUuid=Non
    upgrade_strategy = json.loads('{"inServiceStrategy": {"batchSize": 1,"intervalMillis": 10000,"startFirst": true,"launchConfig": {},"secondaryLaunchConfigs": []}}')
    upgrade_strategy['inServiceStrategy']['batchSize'] = batch_size
    upgrade_strategy['inServiceStrategy']['intervalMillis'] = interval_millis
-   if start_first:
-      upgrade_strategy['inServiceStrategy']['startFirst'] = "true"
-   else:
-      upgrade_strategy['inServiceStrategy']['startFirst'] = "false"
+   upgrade_strategy['inServiceStrategy']['startFirst'] = "false"
 
    r = get(HOST + URL_SERVICE + service_id)
    current_service_config = r.json()
