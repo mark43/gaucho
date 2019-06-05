@@ -220,6 +220,8 @@ def upgrade(service_id, start_first=True, complete_previous=False, imageUuid=Non
 
    # post the upgrade request
    post(current_service_config['actions']['upgrade'], upgrade_strategy)
+   print_json(current_service_config)
+   print_json(upgrade_strategy)
 
    print "Upgrade of %s service started!" % current_service_config['name']
 
